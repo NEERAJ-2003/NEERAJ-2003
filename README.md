@@ -203,9 +203,8 @@ print(me.code_philosophy())
 | Domain | Technologies, Frameworks & Libraries |
 | :--- | :--- |
 | **Core Languages** | <img src="https://skillicons.dev/icons?i=python,js,html,css" alt="Languages" /> |
-| **Backend & Web Frameworks** | <img src="https://skillicons.dev/icons?i=django,sqlite,postman" alt="Backend" /> |
-| **AI, ML & Computer Vision** | <img src="https://skillicons.dev/icons?i=opencv,numpy,tensorflow,scikitlearn" alt="AI & ML" /> |
-| **DevOps & Platforms** | <img src="https://skillicons.dev/icons?i=git,github,vercel,vscode,bash" alt="Tools" /> |
+| **Backend & Web Frameworks** | <img src="https://skillicons.dev/icons?i=django,fastapi,sqlite,postman" alt="Backend" /> |
+| **DevOps & Platforms** | <img src="https://skillicons.dev/icons?i=git,github,vercel,vscode" alt="Tools" /> |
 
 </div>
 
