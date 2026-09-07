@@ -1,7 +1,7 @@
 <div align="center">
 
   <!-- Dynamic Capsule Header with Animated Gradient -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,11,20,30&height=220&section=header&text=NEERAJ%20%E2%9A%A1&fontSize=52&fontAlignY=38&fontColor=ffffff&desc=Full-Stack%20Engineer%20%E2%80%A2%20Python%20%26%20Django%20%E2%80%A2%20Machine%20Learning%20%E2%80%A2%20Computer%20Vision&descSize=18&descAlignY=58&descAlign=50" width="100%" alt="Neeraj Header Banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,24&height=200&section=header&text=NEERAJ&fontSize=52&fontAlignY=38&fontColor=ffffff&desc=Full-Stack%20Engineer%20%7C%20Python%20%26%20Django%20%7C%20ML%20%26%20Computer%20Vision&descSize=18&descAlignY=58&descAlign=50" width="100%" alt="Neeraj Header Banner" />
 
   <!-- Animated Typing SVG Sub-header -->
   <a href="https://github.com/NEERAJ-2003">
@@ -212,21 +212,29 @@ print(me.code_philosophy())
 ### 📊 Real-Time GitHub Analytics
 
 <div align="center">
+  <!-- Real-Time Activity Graph -->
+  <a href="https://github.com/NEERAJ-2003">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=NEERAJ-2003&theme=tokyo-night&hide_border=true&area=true" width="100%" alt="Activity Graph" />
+  </a>
+
+  <br/><br/>
+
+  <!-- Stats & Streak Metrics -->
   <table border="0" width="100%">
     <tr>
-      <td width="50%" align="center">
+      <td width="50%" align="center" valign="middle">
         <a href="https://github.com/NEERAJ-2003">
-          <img src="https://github-readme-stats.vercel.app/api?username=NEERAJ-2003&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=38bdf8&icon_color=a855f7&text_color=94a3b8" width="100%" alt="Neeraj's GitHub Stats" />
+          <img src="https://github-readme-stats.vercel.app/api?username=NEERAJ-2003&show_icons=true&theme=tokyonight&hide_border=true" width="100%" alt="Neeraj's GitHub Stats" />
         </a>
       </td>
-      <td width="50%" align="center">
+      <td width="50%" align="center" valign="middle">
         <a href="https://github.com/NEERAJ-2003">
-          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NEERAJ-2003&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=38bdf8&text_color=94a3b8" width="100%" alt="Top Languages" />
+          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NEERAJ-2003&layout=compact&theme=tokyonight&hide_border=true" width="100%" alt="Top Languages" />
         </a>
       </td>
     </tr>
     <tr>
-      <td colspan="2" align="center">
+      <td colspan="2" align="center" valign="middle">
         <a href="https://github.com/NEERAJ-2003">
           <img src="https://github-readme-streak-stats.herokuapp.com/?user=NEERAJ-2003&theme=tokyonight&hide_border=true&background=0d1117&ring=38bdf8&fire=f59e0b&currStreakLabel=38bdf8" width="100%" alt="Streak Stats" />
         </a>
@@ -236,9 +244,9 @@ print(me.code_philosophy())
 
   <br/>
 
-  <!-- Dynamic GitHub Trophy Showcase -->
+  <!-- Dynamic GitHub Trophy Showcase (Fixed Theme: radical) -->
   <a href="https://github.com/NEERAJ-2003">
-    <img src="https://github-profile-trophy.vercel.app/?username=NEERAJ-2003&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4" alt="GitHub Trophies" />
+    <img src="https://github-profile-trophy.vercel.app/?username=NEERAJ-2003&theme=radical&no-frame=true&no-bg=true&margin-w=4" alt="GitHub Trophies" />
   </a>
 </div>
 
@@ -277,11 +285,17 @@ print(me.code_philosophy())
 
 ---
 
-### 💬 Daily Engineering Insight
+### 💭 Daily Engineering Insight
 
 <div align="center">
-  <img src="https://readme-jokes.vercel.app/api?theme=tokyonight&bgColor=0d1117&textColor=94a3b8&qColor=38bdf8&aColor=a855f7&borderColor=1e293b&hideBorder=true" alt="Developer Joke of the Day" />
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Developer Quote of the Day" />
 </div>
+
+<br/>
+
+> 💡 **Core Philosophy:**  
+> *"First, solve the problem. Then, write the code."* — **John Johnson**  
+> *"Simplicity is prerequisite for reliability."* — **Edsger W. Dijkstra**
 
 ---
 
@@ -305,7 +319,7 @@ print(me.code_philosophy())
   <br/><br/>
 
   <!-- Footer Animated Wave Banner -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,11,20,30&height=110&section=footer" width="100%" alt="Footer Wave" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,24&height=100&section=footer" width="100%" alt="Footer Wave" />
   
   <p align="center">
     <sub>⚡ Designed with precision for <strong>Neeraj (NEERAJ-2003)</strong> • Constantly evolving through code</sub>
