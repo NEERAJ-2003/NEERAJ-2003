@@ -6,8 +6,6 @@
   </a>
 
 
-  <!-- Dynamic Capsule Header with Animated Gradient -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,24&height=200&section=header&text=NEERAJ&fontSize=52&fontAlignY=38&fontColor=ffffff&desc=Full-Stack%20Engineer%20%7C%20Python%20%26%20Django%20%7C%20ML%20%26%20Computer%20Vision&descSize=18&descAlignY=58&descAlign=50" width="100%" alt="Neeraj Header Banner" />
 
   <!-- Animated Typing SVG Sub-header -->
   <a href="https://github.com/NEERAJ-2003">
