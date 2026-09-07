@@ -1,5 +1,16 @@
 <div align="center">
 
+  <!-- Native Cyber Header Banner (Hosted in Repo) -->
+  <a href="https://github.com/NEERAJ-2003">
+    <img src="https://raw.githubusercontent.com/NEERAJ-2003/NEERAJ-2003/main/header.svg" width="100%" alt="Neeraj Header Banner" />
+  </a>
+
+  <!-- Animated Typing SVG Sub-header -->
+  <a href="https://github.com/NEERAJ-2003">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&multiline=false&width=750&height=45&lines=Hi+%F0%9F%91%8B%2C+I'm+Neeraj+(NEERAJ-2003);Architecting+Intelligent+Web+Applications;Pioneering+CNN+%2B+Genetic+Algorithm+Diagnostic+Systems;Building+Interactive+Real-World+Solutions;Transforming+Ideas+Into+Production-Ready+Code+%E2%9C%A8" alt="Dynamic Typing SVG" />
+  </a>
+
+
   <!-- Dynamic Capsule Header with Animated Gradient -->
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,24&height=200&section=header&text=NEERAJ&fontSize=52&fontAlignY=38&fontColor=ffffff&desc=Full-Stack%20Engineer%20%7C%20Python%20%26%20Django%20%7C%20ML%20%26%20Computer%20Vision&descSize=18&descAlignY=58&descAlign=50" width="100%" alt="Neeraj Header Banner" />
 
