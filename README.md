@@ -7,7 +7,7 @@
 
   <!-- Animated Typing SVG Sub-header -->
   <a href="https://github.com/NEERAJ-2003">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&multiline=false&width=750&height=45&lines=Hi+%F0%9F%91%8B%2C+I'm+Neeraj+(NEERAJ-2003);Architecting+Intelligent+Web+Applications;Pioneering+CNN+%2B+Genetic+Algorithm+Diagnostic+Systems;Building+Interactive+Real-World+Solutions;Transforming+Ideas+Into+Production-Ready+Code+%E2%9C%A8" alt="Dynamic Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&multiline=false&width=750&height=45&lines=Hi+%F0%9F%91%8B%2C+I'm+Neeraj;Architecting+Intelligent+Web+Applications;Pioneering+CNN+%2B+Genetic+Algorithm+Diagnostic+Systems;Building+Interactive+Real-World+Solutions;Transforming+Ideas+Into+Production-Ready+Code+%E2%9C%A8" alt="Dynamic Typing SVG" />
   </a>
 
   <br/>
