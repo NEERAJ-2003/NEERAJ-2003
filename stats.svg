@@ -1,0 +1,127 @@
+<svg width="100%" height="250" viewBox="0 0 850 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c14" />
+      <stop offset="60%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#060911" />
+    </linearGradient>
+
+    <!-- Bar Gradients -->
+    <linearGradient id="pyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+
+    <linearGradient id="jsGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#facc15" />
+      <stop offset="100%" stop-color="#eab308" />
+    </linearGradient>
+
+    <linearGradient id="webGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .header-title { font-family: 'Outfit', -apple-system, sans-serif; font-weight: 700; font-size: 18px; fill: #f8fafc; }
+    .header-sub { font-family: 'JetBrains Mono', monospace; font-size: 12px; fill: #38bdf8; font-weight: 600; }
+    .label { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; fill: #94a3b8; font-weight: 500; }
+    .val { font-family: 'JetBrains Mono', monospace; font-size: 13px; fill: #f8fafc; font-weight: 700; }
+    .val-accent { fill: #38bdf8; }
+    .val-green { fill: #10b981; }
+    .bar-bg { fill: rgba(255, 255, 255, 0.08); rx: 4px; }
+  </style>
+
+  <!-- Card Background -->
+  <rect width="850" height="250" rx="14" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.5" />
+
+  <!-- Left Column: Metrics & Architecture -->
+  <g transform="translate(30, 28)">
+    <circle cx="10" cy="10" r="4" fill="#38bdf8" />
+    <text x="24" y="15" class="header-title">Developer Metrics &amp; Stack</text>
+    <text x="24" y="34" class="header-sub">GITHUB @NEERAJ-2003</text>
+
+    <!-- Stat 1 -->
+    <g transform="translate(0, 60)">
+      <text x="10" y="0" class="label">Public Repositories:</text>
+      <text x="180" y="0" class="val val-accent">5 Projects (100% Open Source)</text>
+    </g>
+
+    <!-- Stat 2 -->
+    <g transform="translate(0, 88)">
+      <text x="10" y="0" class="label">Live Web Deployments:</text>
+      <text x="180" y="0" class="val val-green">2 Deployed (FlowTrack, Check-Balance)</text>
+    </g>
+
+    <!-- Stat 3 -->
+    <g transform="translate(0, 116)">
+      <text x="10" y="0" class="label">Primary Frameworks:</text>
+      <text x="180" y="0" class="val">Django (Python), AJAX, OpenCV</text>
+    </g>
+
+    <!-- Stat 4 -->
+    <g transform="translate(0, 144)">
+      <text x="10" y="0" class="label">AI &amp; Vision Systems:</text>
+      <text x="180" y="0" class="val">CNN + Genetic Algorithms, MediaPipe</text>
+    </g>
+
+    <!-- Stat 5 -->
+    <g transform="translate(0, 172)">
+      <text x="10" y="0" class="label">Engineering Philosophy:</text>
+      <text x="180" y="0" class="val val-accent">High Performance • Clean Modular Code</text>
+    </g>
+  </g>
+
+  <!-- Divider Line -->
+  <line x1="490" y1="25" x2="490" y2="225" stroke="#1e293b" stroke-width="1.5" stroke-dasharray="4 4" />
+
+  <!-- Right Column: Language Distribution Bars -->
+  <g transform="translate(520, 28)">
+    <circle cx="10" cy="10" r="4" fill="#a855f7" />
+    <text x="24" y="15" class="header-title">Language Distribution</text>
+    <text x="24" y="34" class="header-sub">CODEBASE ANALYSIS</text>
+
+    <!-- Python Bar (55%) -->
+    <g transform="translate(0, 62)">
+      <text x="10" y="0" class="label">Python (Django, CNN, Vision)</text>
+      <text x="280" y="0" class="val val-accent" text-anchor="end">55%</text>
+      <rect x="10" y="8" width="270" height="8" class="bar-bg" />
+      <rect x="10" y="8" width="148" height="8" rx="4" fill="url(#pyGrad)" />
+    </g>
+
+    <!-- JavaScript Bar (30%) -->
+    <g transform="translate(0, 104)">
+      <text x="10" y="0" class="label">JavaScript &amp; Web APIs</text>
+      <text x="280" y="0" class="val" style="fill: #facc15;" text-anchor="end">30%</text>
+      <rect x="10" y="8" width="270" height="8" class="bar-bg" />
+      <rect x="10" y="8" width="81" height="8" rx="4" fill="url(#jsGrad)" />
+    </g>
+
+    <!-- HTML / CSS Bar (15%) -->
+    <g transform="translate(0, 146)">
+      <text x="10" y="0" class="label">HTML5 &amp; Modern CSS</text>
+      <text x="280" y="0" class="val" style="fill: #ec4899;" text-anchor="end">15%</text>
+      <rect x="10" y="8" width="270" height="8" class="bar-bg" />
+      <rect x="10" y="8" width="41" height="8" rx="4" fill="url(#webGrad)" />
+    </g>
+
+    <!-- Status pill -->
+    <g transform="translate(10, 185)">
+      <rect width="270" height="24" rx="12" fill="#0f172a" stroke="#10b981" stroke-opacity="0.4" stroke-width="1" />
+      <circle cx="14" cy="12" r="4" fill="#10b981" />
+      <text x="26" y="16" font-family="'JetBrains Mono', monospace" font-size="11" fill="#10b981" font-weight="600">Active • Open to Collaborate</text>
+    </g>
+  </g>
+</svg>

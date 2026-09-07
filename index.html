@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neeraj (NEERAJ-2003) — Interactive Developer Profile & Showcase</title>
+  <meta name="description" content="Interactive developer profile of Neeraj (NEERAJ-2003): Full-Stack Developer, Python, Django, Computer Vision, and Machine Learning engineer." />
+  
+  <!-- Modern Typography from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- FontAwesome for crisp vector icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient glowing backdrop canvas / mesh -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="nav-bar">
+    <div class="nav-container">
+      <a href="https://github.com/NEERAJ-2003" target="_blank" class="brand-badge">
+        <span class="pulse-dot"></span>
+        <span class="brand-text">NEERAJ-2003</span>
+        <span class="badge-role">DEV</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#about" class="nav-link"><i class="fa-solid fa-user-astronaut"></i> About</a>
+        <a href="#projects" class="nav-link"><i class="fa-solid fa-layer-group"></i> Projects</a>
+        <a href="#terminal" class="nav-link"><i class="fa-solid fa-terminal"></i> Terminal</a>
+        <a href="#skills" class="nav-link"><i class="fa-solid fa-microchip"></i> Skills</a>
+        <a href="#stats" class="nav-link"><i class="fa-solid fa-chart-simple"></i> Stats</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="open-readme-btn" class="btn btn-secondary" title="View & Copy GitHub README.md">
+          <i class="fa-brands fa-markdown"></i>
+          <span>Get README</span>
+        </button>
+        <a href="https://github.com/NEERAJ-2003" target="_blank" class="btn btn-primary">
+          <i class="fa-brands fa-github"></i>
+          <span>Follow</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="page-container">
+    
+    <!-- Hero Profile Section -->
+    <section id="about" class="hero-section">
+      <div class="hero-card glass-panel">
+        <div class="hero-header">
+          <!-- Avatar with Animated Halo -->
+          <div class="avatar-wrapper">
+            <div class="avatar-ring"></div>
+            <img src="https://avatars.githubusercontent.com/u/147088651?v=4" alt="Neeraj" class="avatar-img" />
+            <div class="status-indicator" title="Open to Opportunities">
+              <span class="status-glow"></span>
+            </div>
+          </div>
+
+          <!-- Bio & Dynamic Intro -->
+          <div class="hero-info">
+            <div class="badge-row">
+              <span class="tag tag-accent"><i class="fa-solid fa-code"></i> Full-Stack Dev</span>
+              <span class="tag tag-emerald"><i class="fa-solid fa-brain"></i> ML & Vision</span>
+              <span class="tag tag-cyan"><i class="fa-solid fa-bolt"></i> Python & Django</span>
+            </div>
+
+            <h1 class="hero-title">
+              Hi, I'm <span class="gradient-text">Neeraj</span>
+            </h1>
+
+            <div class="typing-container">
+              <span class="terminal-prompt">$</span>
+              <span id="typed-text" class="typed-text"></span>
+              <span class="cursor-blink">|</span>
+            </div>
+
+            <p class="hero-bio">
+              Software Engineer passionate about crafting intelligent web applications, computer vision systems, and robust backend architectures. Focused on bridging deep learning research with seamless user experiences.
+            </p>
+
+            <!-- Metrics Quick Counter -->
+            <div class="hero-metrics">
+              <div class="metric-item">
+                <span class="metric-number" data-count="5">5</span>
+                <span class="metric-label">Repositories</span>
+              </div>
+              <div class="metric-divider"></div>
+              <div class="metric-item">
+                <span class="metric-number" data-count="2">2</span>
+                <span class="metric-label">Live Deployments</span>
+              </div>
+              <div class="metric-divider"></div>
+              <div class="metric-item">
+                <span class="metric-number">100%</span>
+                <span class="metric-label">Open Source</span>
+              </div>
+              <div class="metric-divider"></div>
+              <div class="metric-item">
+                <span class="metric-number" style="color: var(--color-emerald);">Active</span>
+                <span class="metric-label">Availability</span>
+              </div>
+            </div>
+
+            <div class="hero-cta-row">
+              <a href="#projects" class="btn btn-primary btn-lg">
+                <i class="fa-solid fa-rocket"></i> Explore Work
+              </a>
+              <a href="#terminal" class="btn btn-outline btn-lg">
+                <i class="fa-solid fa-terminal"></i> Open Terminal
+              </a>
+              <a href="https://github.com/NEERAJ-2003" target="_blank" class="btn btn-icon btn-lg" title="GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Terminal Section -->
+    <section id="terminal" class="section-block">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-terminal"></i> CLI Emulator</div>
+        <h2 class="section-title">Interactive Terminal</h2>
+        <p class="section-subtitle">Type commands to inspect my background, run diagnostics, or trigger interactive easter eggs.</p>
+      </div>
+
+      <div class="terminal-window glass-panel">
+        <div class="terminal-bar">
+          <div class="terminal-buttons">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <div class="terminal-title">neeraj@portfolio-os: ~/profile (bash)</div>
+          <div class="terminal-actions">
+            <button id="terminal-clear-btn" class="terminal-action-btn" title="Clear screen">
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
+          </div>
+        </div>
+
+        <div id="terminal-screen" class="terminal-body">
+          <div class="terminal-output">
+            <span class="term-dim">Welcome to Neeraj's Interactive Terminal v2.5.0.</span><br/>
+            <span class="term-dim">Type <span class="term-highlight">help</span> to view available commands, or click quick actions below.</span>
+          </div>
+        </div>
+
+        <div class="terminal-input-bar">
+          <span class="term-user">visitor@neeraj-dev</span>:<span class="term-dir">~</span>$&nbsp;
+          <input type="text" id="terminal-input" autocomplete="off" spellcheck="false" placeholder="Type a command (e.g. 'help', 'skills', 'projects', 'cat about')..." />
+        </div>
+
+        <div class="terminal-chips">
+          <span class="chip-label">Quick Commands:</span>
+          <button class="term-chip" data-cmd="help">help</button>
+          <button class="term-chip" data-cmd="skills">skills</button>
+          <button class="term-chip" data-cmd="projects">projects</button>
+          <button class="term-chip" data-cmd="whoami">whoami</button>
+          <button class="term-chip" data-cmd="stats">stats</button>
+          <button class="term-chip" data-cmd="contact">contact</button>
+          <button class="term-chip" data-cmd="sudo hire">sudo hire</button>
+          <button class="term-chip" data-cmd="clear">clear</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-block">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-folder-open"></i> Portfolio</div>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Real-world software spanning full-stack web applications, machine learning, and computer vision.</p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">All Projects (5)</button>
+        <button class="filter-btn" data-filter="web">Web & Full Stack (3)</button>
+        <button class="filter-btn" data-filter="ai">AI / ML & Vision (2)</button>
+        <button class="filter-btn" data-filter="live">Live Deployed (2)</button>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="projects-grid" id="projects-container">
+        
+        <!-- Project 1: Brain Tumor Detection -->
+        <div class="project-card glass-panel" data-category="ai">
+          <div class="project-header">
+            <div class="project-icon-box icon-purple">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <div class="project-badges">
+              <span class="tag tag-accent">Python</span>
+              <span class="tag tag-purple">CNN</span>
+              <span class="tag tag-cyan">Genetic Algorithm</span>
+            </div>
+          </div>
+          <h3 class="project-title">Brain Tumor Detection using CNN & Genetic Algorithm</h3>
+          <p class="project-desc">
+            An optimization-based deep learning pipeline analyzing MRI brain scans. Utilizes Genetic Algorithms for intelligent feature selection and hybrid CNN architectures for precise clinical tumor identification.
+          </p>
+          <div class="project-tech-tags">
+            <span>Python</span>
+            <span>CNN</span>
+            <span>Genetic Algorithm</span>
+            <span>Image Processing</span>
+            <span>MRI Analysis</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/NEERAJ-2003/Brain-Tumor-Detection-using-CNN-and-Genetic-Algorithm" target="_blank" class="btn btn-outline btn-sm">
+              <i class="fa-brands fa-github"></i> Repository
+            </a>
+            <button class="btn btn-ghost btn-sm info-trigger" data-project="brain-tumor">
+              <i class="fa-solid fa-circle-info"></i> Architecture
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 2: FlowTrack -->
+        <div class="project-card glass-panel featured-glow" data-category="web live">
+          <div class="featured-badge"><i class="fa-solid fa-star"></i> Live App</div>
+          <div class="project-header">
+            <div class="project-icon-box icon-cyan">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div class="project-badges">
+              <span class="tag tag-emerald"><i class="fa-solid fa-globe"></i> Vercel</span>
+              <span class="tag tag-cyan">JavaScript</span>
+            </div>
+          </div>
+          <h3 class="project-title">FlowTrack — Monthly Expense Tracker</h3>
+          <p class="project-desc">
+            A responsive, interactive personal finance dashboard to track recurring and one-time monthly expenses. Provides dynamic cashflow calculations and visual budget summaries.
+          </p>
+          <div class="project-tech-tags">
+            <span>JavaScript</span>
+            <span>Vercel</span>
+            <span>HTML5/CSS3</span>
+            <span>LocalStorage</span>
+            <span>Finance</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://flow-track-eight.vercel.app/" target="_blank" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </a>
+            <a href="https://github.com/NEERAJ-2003/FlowTrack" target="_blank" class="btn btn-outline btn-sm">
+              <i class="fa-brands fa-github"></i> Code
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: Check-Balance -->
+        <div class="project-card glass-panel featured-glow" data-category="web live">
+          <div class="featured-badge"><i class="fa-solid fa-star"></i> Live App</div>
+          <div class="project-header">
+            <div class="project-icon-box icon-emerald">
+              <i class="fa-solid fa-wallet"></i>
+            </div>
+            <div class="project-badges">
+              <span class="tag tag-emerald"><i class="fa-solid fa-globe"></i> Vercel</span>
+              <span class="tag tag-cyan">JavaScript</span>
+            </div>
+          </div>
+          <h3 class="project-title">Check-Balance — Financial Monitor</h3>
+          <p class="project-desc">
+            A minimalist financial tracking web application for real-time monitoring of available capital, expenditures, and balance safety thresholds.
+          </p>
+          <div class="project-tech-tags">
+            <span>JavaScript</span>
+            <span>Vercel</span>
+            <span>Web UI</span>
+            <span>Budgeting</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://check-balance-pi.vercel.app/" target="_blank" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </a>
+            <a href="https://github.com/NEERAJ-2003/Check-Balance" target="_blank" class="btn btn-outline btn-sm">
+              <i class="fa-brands fa-github"></i> Code
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4: Django with CRUD and AJAX -->
+        <div class="project-card glass-panel" data-category="web">
+          <div class="project-header">
+            <div class="project-icon-box icon-green">
+              <i class="fa-brands fa-python"></i>
+            </div>
+            <div class="project-badges">
+              <span class="tag tag-accent">Django</span>
+              <span class="tag tag-cyan">AJAX</span>
+              <span class="tag tag-emerald">CRUD</span>
+            </div>
+          </div>
+          <h3 class="project-title">Django with CRUD & AJAX</h3>
+          <p class="project-desc">
+            Full-stack web application implementing fluid asynchronous Create, Read, Update, and Delete operations using Django ORM and AJAX without page refreshes.
+          </p>
+          <div class="project-tech-tags">
+            <span>Django</span>
+            <span>Python</span>
+            <span>AJAX</span>
+            <span>SQLite / ORM</span>
+            <span>JSON APIs</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/NEERAJ-2003/Django-with-CRUD-and-AJAX" target="_blank" class="btn btn-outline btn-sm">
+              <i class="fa-brands fa-github"></i> Repository
+            </a>
+            <button class="btn btn-ghost btn-sm info-trigger" data-project="django-crud">
+              <i class="fa-solid fa-circle-info"></i> Details
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 5: Gesture Controlled Brightness -->
+        <div class="project-card glass-panel" data-category="ai">
+          <div class="project-header">
+            <div class="project-icon-box icon-blue">
+              <i class="fa-solid fa-hand"></i>
+            </div>
+            <div class="project-badges">
+              <span class="tag tag-accent">Python</span>
+              <span class="tag tag-cyan">OpenCV</span>
+              <span class="tag tag-purple">HCI</span>
+            </div>
+          </div>
+          <h3 class="project-title">Gesture-Controlled Brightness</h3>
+          <p class="project-desc">
+            Touchless hardware controller enabling users to dynamically adjust screen or display brightness using real-time hand movements and spatial geometry captured via webcam.
+          </p>
+          <div class="project-tech-tags">
+            <span>OpenCV</span>
+            <span>Python</span>
+            <span>MediaPipe / Hand Tracking</span>
+            <span>Screen Brightness API</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/NEERAJ-2003/GESTURE-CONTROLLED-BRIGHTNESS" target="_blank" class="btn btn-outline btn-sm">
+              <i class="fa-brands fa-github"></i> Repository
+            </a>
+            <button class="btn btn-ghost btn-sm info-trigger" data-project="gesture-ctrl">
+              <i class="fa-solid fa-circle-info"></i> Details
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills & Technology Stack -->
+    <section id="skills" class="section-block">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-microchip"></i> Capabilities</div>
+        <h2 class="section-title">Skills & Tech Arsenal</h2>
+        <p class="section-subtitle">Core technologies, frameworks, and methodologies I leverage to build robust software.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Skill Group 1 -->
+        <div class="skill-category glass-panel">
+          <div class="skill-cat-header">
+            <i class="fa-solid fa-code"></i>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-pill">
+              <i class="fa-brands fa-python" style="color: #38bdf8;"></i>
+              <span>Python (Primary)</span>
+            </div>
+            <div class="skill-pill">
+              <i class="fa-brands fa-js" style="color: #f7df1e;"></i>
+              <span>JavaScript (ES6+)</span>
+            </div>
+            <div class="skill-pill">
+              <i class="fa-brands fa-html5" style="color: #f97316;"></i>
+              <span>HTML5</span>
+            </div>
+            <div class="skill-pill">
+              <i class="fa-brands fa-css3-alt" style="color: #38bdf8;"></i>
+              <span>CSS3 & Modern Layouts</span>
+            </div>
+            <div class="skill-pill">
+              <i class="fa-solid fa-database" style="color: #a855f7;"></i>
+              <span>SQL & Relational DBs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Group 2 -->
+        <div class="skill-category glass-panel">
+          <div class="skill-cat-header">
+            <i class="fa-solid fa-cubes"></i>
+            <h3>Frameworks & Full-Stack</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-pill">
+              <i class="fa-solid fa-layer-group" style="color: #10b981;"></i>
+              <span>Django Web Framework</span>
+            </div>
+            <div class="skill-pill">
+              <i class="fa-solid fa-arrows-rotate" style="color: #38bdf8;"></i>
+              <span>AJAX / Async Fetch</span>
+            </div>
+            <div class="skill-pill">
+              <i class="fa-solid fa-network-wired" style="color: #f59e0b;"></i>
+              <span>RESTful API Design</span>
+            </div>
+            <div class="skill-pill">
+              <i class="fa-solid fa-database" style="color: #06b6d4;"></i>
+              <span>Django ORM & Models</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Group 3 -->
+        <div class="skill-category glass-panel">
+          <div class="skill-cat-header">
+            <i class="fa-solid fa-robot"></i>
+            <h3>AI, ML & Computer Vision</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-pill">
+              <i class="fa-solid fa-eye" style="color: #818cf8;"></i>
+              <span>OpenCV & Image Ops</span>
+            </div>
+            <div class="skill-pill">
+              <i class="fa-solid fa-network-wired" style="color: #ec4899;"></i>
+              <span>CNNs (Deep Learning)</span>
+            </div>
+            <div class="skill-pill">
+              <i class="fa-solid fa-dna" style="color: #a855f7;"></i>
+              <span>Genetic Algorithms</span>
+            </div>
+            <div class="skill-pill">
+              <i class="fa-solid fa-square-root-variable" style="color: #06b6d4;"></i>
+              <span>NumPy & SciPy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Group 4 -->
+        <div class="skill-category glass-panel">
+          <div class="skill-cat-header">
+            <i class="fa-solid fa-toolbox"></i>
+            <h3>Tools & Workflow</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-pill">
+              <i class="fa-brands fa-git-alt" style="color: #f05032;"></i>
+              <span>Git & GitHub Workflow</span>
+            </div>
+            <div class="skill-pill">
+              <i class="fa-solid fa-triangle-exclamation" style="color: #ffffff;"></i>
+              <span>Vercel Cloud Deployments</span>
+            </div>
+            <div class="skill-pill">
+              <i class="fa-solid fa-terminal" style="color: #10b981;"></i>
+              <span>Linux / Bash Shell</span>
+            </div>
+            <div class="skill-pill">
+              <i class="fa-solid fa-code" style="color: #007acc;"></i>
+              <span>VS Code & Debugging</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GitHub Live Stats Section -->
+    <section id="stats" class="section-block">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-chart-line"></i> GitHub Insights</div>
+        <h2 class="section-title">GitHub Activity & Metrics</h2>
+        <p class="section-subtitle">Real-time statistics fetched dynamically for account <strong>NEERAJ-2003</strong>.</p>
+      </div>
+
+      <div class="stats-cards-grid">
+        <div class="stats-card glass-panel">
+          <div class="stats-card-title"><i class="fa-solid fa-chart-pie"></i> General Stats</div>
+          <div class="stats-img-wrapper">
+            <img src="https://github-readme-stats.vercel.app/api?username=NEERAJ-2003&show_icons=true&theme=tokyonight&hide_border=true" alt="NEERAJ-2003 GitHub Stats" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="stats-card glass-panel">
+          <div class="stats-card-title"><i class="fa-solid fa-code"></i> Top Languages</div>
+          <div class="stats-img-wrapper">
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NEERAJ-2003&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="stats-card glass-panel full-width-card">
+          <div class="stats-card-title"><i class="fa-solid fa-fire"></i> Contribution Streak</div>
+          <div class="stats-img-wrapper">
+            <img src="https://github-readme-streak-stats.herokuapp.com/?user=NEERAJ-2003&theme=tokyonight&hide_border=true&background=111625&ring=38bdf8&fire=f59e0b&currStreakLabel=38bdf8" alt="Streak Stats" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Connect -->
+    <section class="section-block">
+      <div class="contact-banner glass-panel">
+        <div class="contact-text">
+          <h2>Let's build something extraordinary together</h2>
+          <p>Whether you have an inquiry, open-source project, or opportunity, feel free to reach out.</p>
+        </div>
+        <div class="contact-buttons">
+          <a href="https://github.com/NEERAJ-2003" target="_blank" class="btn btn-primary btn-lg">
+            <i class="fa-brands fa-github"></i> Visit GitHub Profile
+          </a>
+          <a href="mailto:neeraj.contact.dev@gmail.com" class="btn btn-secondary btn-lg">
+            <i class="fa-solid fa-envelope"></i> Send Email
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="page-footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <p>Built with modern web standards for <strong>NEERAJ-2003</strong></p>
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/NEERAJ-2003" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="#about"><i class="fa-solid fa-arrow-up"></i> Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal: GitHub Profile README Viewer & 1-Click Exporter -->
+  <div id="readme-modal" class="modal-overlay">
+    <div class="modal-dialog glass-panel">
+      <div class="modal-header">
+        <div class="modal-title-box">
+          <i class="fa-brands fa-markdown modal-icon"></i>
+          <div>
+            <h3>GitHub Profile README.md</h3>
+            <p>Ready to push directly to your repository: <code>NEERAJ-2003/NEERAJ-2003</code></p>
+          </div>
+        </div>
+        <button id="close-modal-btn" class="close-btn" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-tabs">
+        <button class="modal-tab-btn active" data-tab="code"><i class="fa-solid fa-code"></i> Markdown Code</button>
+        <button class="modal-tab-btn" data-tab="guide"><i class="fa-solid fa-book-open"></i> How to setup on GitHub</button>
+      </div>
+
+      <div class="modal-body">
+        <div id="tab-code" class="modal-tab-pane active">
+          <div class="code-box-wrapper">
+            <div class="code-box-header">
+              <span>README.md</span>
+              <button id="copy-readme-btn" class="btn btn-sm btn-primary">
+                <i class="fa-regular fa-copy"></i>
+                <span id="copy-btn-text">Copy Markdown</span>
+              </button>
+            </div>
+            <pre><code id="readme-code-content">Loading README content...</code></pre>
+          </div>
+        </div>
+
+        <div id="tab-guide" class="modal-tab-pane">
+          <div class="guide-steps">
+            <div class="step-card">
+              <span class="step-num">1</span>
+              <div>
+                <h4>Create a Special Repository</h4>
+                <p>Go to <a href="https://github.com/new" target="_blank">github.com/new</a> and create a repository named exactly <code>NEERAJ-2003</code> (matching your username).</p>
+              </div>
+            </div>
+
+            <div class="step-card">
+              <span class="step-num">2</span>
+              <div>
+                <h4>Make It Public</h4>
+                <p>Ensure the repository is set to <strong>Public</strong> and check <strong>Add a README file</strong>.</p>
+              </div>
+            </div>
+
+            <div class="step-card">
+              <span class="step-num">3</span>
+              <div>
+                <h4>Paste & Commit</h4>
+                <p>Click the <strong>Copy Markdown</strong> button above, paste the content into your new repository's <code>README.md</code>, and commit changes.</p>
+              </div>
+            </div>
+
+            <div class="step-card">
+              <span class="step-num">4</span>
+              <div>
+                <h4>Instant Profile Upgrade! ✨</h4>
+                <p>Visit <a href="https://github.com/NEERAJ-2003" target="_blank">github.com/NEERAJ-2003</a> to see your new animated profile in action!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button id="modal-done-btn" class="btn btn-secondary">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification System -->
+  <div id="toast" class="toast">
+    <i class="fa-solid fa-circle-check toast-icon"></i>
+    <span id="toast-message">Copied to clipboard!</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
